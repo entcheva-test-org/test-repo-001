@@ -1,0 +1,34 @@
+title: RFC - Your Title Here
+labels: ["rfc"]
+body:
+  - type: textarea
+    id: rfc
+    attributes:
+      label: RFC
+      value: |
+        Suggested changes...
+  - type: textarea
+    id: configurations
+    attributes:
+      label: Impacted Configurations
+      value: |
+        Impacted configurations...
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Info
+      value: |
+        Any additional info...
+  - type: checkboxes
+    id: sanity-checks
+    attributes:
+      label: Before you submit your RFC, please confirm the following. If any of these required steps are not taken, we may not be able to review your RFC. Help us to help you!
+      options:
+        - label: I have [searched for related issues](https://github.com/typescript-eslint/typescript-eslint/issues?q=is%3Aissue+label%3A%22enhancement%3A+new+plugin+rule%22) and found none that match my proposal.
+          required: true
+        - label: I have searched the [current rule list](https://typescript-eslint.io/rules/#supported-rules) and found no rules that match my proposal.
+          required: true
+        - label: I have [read the FAQ](https://typescript-eslint.io/docs/linting/troubleshooting) and my problem is not listed.
+          required: true
